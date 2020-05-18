@@ -58,6 +58,7 @@ exclude:
 #   - vendor/ruby/
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist

@@ -26,8 +26,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.19.2"
-# theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Outputting
@@ -43,16 +42,10 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude:
+# exclude:
 #   - Gemfile
 #   - Gemfile.lock
-  # - assets
-  # - pages
-  # - plugins
-  # - store
-  # - .nuxt
-
-  # - assets
+#   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

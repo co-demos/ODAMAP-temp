@@ -45,13 +45,6 @@ include:
 exclude:
 #   - Gemfile
 #   - Gemfile.lock
-  - backend
-  - frontend
-  - script
-  - published-data
-  - scripts
-  - static-data
-  - utils
   # - assets
   # - pages
   # - plugins

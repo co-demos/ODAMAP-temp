@@ -46,7 +46,7 @@ exclude:
 #   - Gemfile
 #   - Gemfile.lock
   - backend
-  - fronend
+  - frontend
   - script
   - published-data
   - scripts

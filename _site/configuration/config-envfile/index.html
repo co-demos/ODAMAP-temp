@@ -1,0 +1,812 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>CONFIGURE YOUR ENVIRONMENT VARIABLES - ODAMAP docs</title>
+<meta name="description" content="  ">
+
+
+  <meta name="author" content="Julien Paris">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="ODAMAP docs">
+<meta property="og:title" content="CONFIGURE YOUR ENVIRONMENT VARIABLES">
+<meta property="og:url" content="http://localhost:4000/configuration/config-envfile/">
+
+
+  <meta property="og:description" content="  ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-05-05T00:00:00+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/configuration/config-envfile/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="ODAMAP docs Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/static/logos/logo_apiviz_icon_15.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          ODAMAP docs
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/general/overview">Overview</a>
+            </li><li class="masthead__menu-item">
+              <a href="/guide/installation">Quickstart guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/etalab/dashboard-aides-entreprises">Repo</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">The ODAMAP project</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/general/overview">Overview</a></li>
+          
+            <li><a href="/general/screenshots">Screenshots</a></li>
+          
+            <li><a href="/general/gallery">Gallery</a></li>
+          
+            <li><a href="/general/changelog">Change log</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Installation</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/guide/installation">Installation walkthrough</a></li>
+          
+            <li><a href="/guide/deployment-configs">Deployment</a></li>
+          
+            <li><a href="/guide/install-docs">Install the docs</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Customization</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/configuration/config-overview">Configuration overview</a></li>
+          
+            <li><a href="/configuration/config-url-params">URL parameters</a></li>
+          
+            <li><a href="/configuration/config-envfile">Environment variables</a></li>
+          
+            <li><a href="/configuration/config-configs">Configuration files</a></li>
+          
+            <li><a href="/configuration/config-static">Static datasets</a></li>
+          
+            <li><a href="/configuration/config-locales">Locales</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Developers</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/dev/maintain">Maintenance</a></li>
+          
+            <li><a href="/dev/roadmaps">Roadmaps</a></li>
+          
+            <li><a href="/dev/stack">Stack</a></li>
+          
+            <li><a href="/dev/contributing">Contributing</a></li>
+          
+            <li><a href="/dev/guidelines">Guidelines</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Meta</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/meta/credits">Credits</a></li>
+          
+            <li><a href="/meta/license">License</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/posts/"><span class="nav__sub-title">Blog</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/categories/"><span class="nav__sub-title">Categories</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/tags/"><span class="nav__sub-title">Tags</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="CONFIGURE YOUR ENVIRONMENT VARIABLES">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2020-05-05T00:00:00+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">CONFIGURE YOUR ENVIRONMENT VARIABLES
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i>  contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#configure-your-odamap-instances-environment-variables">Configure your ODAMAP instance’s environment variables</a>
+    <ul>
+      <li><a href="#what-you-have-to-know">What you have to know</a></li>
+      <li><a href="#the-odamap-env-related--files-locations">The ODAMAP .env-related  files locations</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-env-files-structure">The .env file’s structure</a>
+    <ul>
+      <li><a href="#global-variables">Global variables</a></li>
+      <li><a href="#overrides-variables">Overrides variables</a></li>
+      <li><a href="#locales-variables">Locales variables</a></li>
+      <li><a href="#metrics-variables">Metrics variables</a></li>
+      <li><a href="#datasets-variables--data-files">Datasets variables / data files</a></li>
+      <li><a href="#routes-variables">Routes variables</a></li>
+      <li><a href="#colors-variables">Colors variables</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <hr />
+
+<h2 id="configure-your-odamap-instances-environment-variables">Configure your ODAMAP instance’s environment variables</h2>
+
+<h3 id="what-you-have-to-know">What you have to know</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">.env</code> file manages the first level of customization. It allows you to override some parameters, set the running mode of your app, set some default colors, set the languages you want, etc…</p>
+
+<p>Those variables are loaded indirectly in <code class="language-plaintext highlighter-rouge">nuxt.config.js</code>, via the <code class="language-plaintext highlighter-rouge">nuxt_loadConfigs_fromJS.js</code> file, and then pass through several processes :</p>
+
+<ul>
+  <li>they have an influence on how configs JSON files are produced. More on that topic <a href="/configuration/config-configs">here</a> ;</li>
+  <li>they are stored in <code class="language-plaintext highlighter-rouge">process.env.CONFIG_APP</code>, to be usable in the vuex store later on ;</li>
+</ul>
+
+<h3 id="the-odamap-env-related--files-locations">The ODAMAP <code class="language-plaintext highlighter-rouge">.env</code>-related  files locations</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>frontend
+│   README.md
+│   .env
+│   .envExample
+│   nuxt.config.js
+│   nuxt_loadConfigs_fromJSjs
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="the-env-files-structure">The <code class="language-plaintext highlighter-rouge">.env</code> file’s structure</h2>
+
+<hr />
+<h3 id="global-variables">Global variables</h3>
+
+<p>To choose the running mode, the port, the host…</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NUXT_ENV_RUN_MODE</span><span class="o">=</span>dev
+<span class="nv">NUXT_ENV_HOST</span><span class="o">=</span>localhost
+<span class="nv">NUXT_ENV_PORT_DEV</span><span class="o">=</span>8000
+<span class="nv">NUXT_ENV_APP_TITLE</span><span class="o">=</span>Aides aux entreprises
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">NUXT_ENV_RUN_MODE</code> can have the following values :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">dev</code></li>
+  <li><code class="language-plaintext highlighter-rouge">preprod</code></li>
+  <li><code class="language-plaintext highlighter-rouge">prod</code></li>
+</ul>
+
+<hr />
+<h3 id="overrides-variables">Overrides variables</h3>
+
+<p>Overrides the following url’s parameters : <code class="language-plaintext highlighter-rouge">iframe</code>, <code class="language-plaintext highlighter-rouge">noroutetabs</code>, <code class="language-plaintext highlighter-rouge">nomapscroll</code></p>
+
+<p>See more on that topic <a href="/configuration/config-url-params">here</a></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NUXT_ENV_APP_IFRAME_OVERRIDE</span><span class="o">=</span>no
+<span class="nv">NUXT_ENV_APP_ROUTESTABS_OVERRIDE</span><span class="o">=</span>no
+<span class="nv">NUXT_ENV_APP_NOMAPSCROLL_OVERRIDE</span><span class="o">=</span>no
+</code></pre></div></div>
+
+<hr />
+<h3 id="locales-variables">Locales variables</h3>
+
+<p>Set the languages your app will use and specify the JSON translation files you’ll need to load.</p>
+
+<p>See more on that topic <a href="/configuration/config-locales">here</a></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NUXT_ENV_LANG_DEFAULT_LOCALE</span><span class="o">=</span>fr
+<span class="nv">NUXT_ENV_LANG_DEFAULT_LOCALES</span><span class="o">=</span>fr:Français:fr-FR.js
+</code></pre></div></div>
+
+<hr />
+<h3 id="metrics-variables">Metrics variables</h3>
+
+<p>For now it only uses Matomo framework for metrics.</p>
+
+<p>Check <a href="https://matomo.org/">Matomo documentation</a> for more infos.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NUXT_ENV_MATOMO_HOST</span><span class="o">=</span>&lt;YOUR MATOMO METRICS SERVER/DOMAIN/URL&gt;
+<span class="nv">NUXT_ENV_MATOMO_SITE_ID</span><span class="o">=</span>&lt;YOUR ID NUMBER&gt;
+</code></pre></div></div>
+
+<hr />
+<h3 id="datasets-variables--data-files">Datasets variables / data files</h3>
+
+<p>This part sets up where your config files are loaded from if you want them to be loaded remotely.</p>
+
+<p>More on that topic <a href="/configuration/config-configs">here</a></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NUXT_ENV_CONFIG_FROM</span><span class="o">=</span>local_js_files
+<span class="nv">NUXT_ENV_CONFIG_TO_JSON_FOLDER</span><span class="o">=</span>aides-entreprises
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">NUXT_ENV_CONFIG_FROM</code> variable can have one of the following values :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">local_js_files</code></li>
+  <li><code class="language-plaintext highlighter-rouge">local_json_files</code></li>
+  <li><code class="language-plaintext highlighter-rouge">distant_json_files</code></li>
+</ul>
+
+<p>Then map the config files :</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### ONLY FOR DISTANT FILES</span>
+<span class="nv">NUXT_ENV_configs_URLBASE</span><span class="o">=</span>https://raw.githubusercontent.com/co-demos/ODAMPA-configs/master/AIDES-ENTREPRISES/configs/json/
+<span class="nv">NUXT_ENV_configAppUIUX</span><span class="o">=</span>configAppUIUX.json
+<span class="nv">NUXT_ENV_configAppRoutes</span><span class="o">=</span>configAppRoutes.json
+<span class="nv">NUXT_ENV_configAppData</span><span class="o">=</span>configAppData.json
+<span class="nv">NUXT_ENV_configAppMap</span><span class="o">=</span>configAppMap.json
+<span class="nv">NUXT_ENV_configAppCharts</span><span class="o">=</span>configAppCharts.json
+<span class="nv">NUXT_ENV_configAppNumbers</span><span class="o">=</span>configAppNumbers.json
+<span class="nv">NUXT_ENV_configAppTexts</span><span class="o">=</span>configAppTexts.json
+<span class="nv">NUXT_ENV_configAppTables</span><span class="o">=</span>configAppTables.json
+<span class="nv">NUXT_ENV_configAppRawData</span><span class="o">=</span>configAppRawData.json
+<span class="nv">NUXT_ENV_configAppNavbarFooters</span><span class="o">=</span>configAppNavbarFooters.json
+<span class="nv">NUXT_ENV_configAppGlobalButtons</span><span class="o">=</span>configAppGlobalButtons.json
+</code></pre></div></div>
+
+<hr />
+<h3 id="routes-variables">Routes variables</h3>
+
+<p>This part details which routes you want to build at <code class="language-plaintext highlighter-rouge">npm run build</code> level, for instance for a deployment as SPA in Netlify. This part allows you to avoid any 404 error when deployed as SPA + build.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NUXT_ENV_GENERATE_ROUTES</span><span class="o">=</span>/fds,/pge,/reports
+</code></pre></div></div>
+
+<hr />
+<h3 id="colors-variables">Colors variables</h3>
+
+<p>Those variables will override default Vuetify themes colors. Check <a href="https://vuetifyjs.com/en/customization/theme/">Vuetify documentation</a> for more infos…</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NUXT_ENV_LOADING_COLOR</span><span class="o">=</span><span class="c">#d1335b</span>
+<span class="nv">NUXT_ENV_LOADING_HEIGHT</span><span class="o">=</span>5
+
+<span class="nv">NUXT_ENV_THEME_IS_DARK</span><span class="o">=</span><span class="nb">false
+
+</span><span class="nv">NUXT_ENV_THEME_LIGHT_primary</span><span class="o">=</span><span class="c">#000091</span>
+<span class="nv">NUXT_ENV_THEME_LIGHT_accent</span><span class="o">=</span><span class="c">#572a99</span>
+<span class="nv">NUXT_ENV_THEME_LIGHT_secondary</span><span class="o">=</span><span class="c">#b1133b</span>
+<span class="nv">NUXT_ENV_THEME_LIGHT_info</span><span class="o">=</span><span class="c">#53657D</span>
+<span class="nv">NUXT_ENV_THEME_LIGHT_warning</span><span class="o">=</span><span class="c">#ff9947</span>
+<span class="nv">NUXT_ENV_THEME_LIGHT_error</span><span class="o">=</span><span class="c">#D1335B</span>
+<span class="nv">NUXT_ENV_THEME_LIGHT_success</span><span class="o">=</span><span class="c">#03BD5B</span>
+
+<span class="nv">NUXT_ENV_THEME_DARK_primary</span><span class="o">=</span><span class="c">#000091</span>
+<span class="nv">NUXT_ENV_THEME_DARK_accent</span><span class="o">=</span><span class="c">#572a99</span>
+<span class="nv">NUXT_ENV_THEME_DARK_secondary</span><span class="o">=</span><span class="c">#b1133b</span>
+<span class="nv">NUXT_ENV_THEME_DARK_info</span><span class="o">=</span><span class="c">#53657D</span>
+<span class="nv">NUXT_ENV_THEME_DARK_warning</span><span class="o">=</span><span class="c">#ff9947</span>
+<span class="nv">NUXT_ENV_THEME_DARK_error</span><span class="o">=</span><span class="c">#D1335B</span>
+<span class="nv">NUXT_ENV_THEME_DARK_success</span><span class="o">=</span><span class="c">#03BD5B</span>
+</code></pre></div></div>
+
+<hr />
+
+<p><br />
+<br /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#configuration" class="page__taxonomy-item" rel="tag">configuration</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#documentation" class="page__taxonomy-item" rel="tag">documentation</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#installation" class="page__taxonomy-item" rel="tag">installation</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#tutorial" class="page__taxonomy-item" rel="tag">tutorial</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#configuration" class="page__taxonomy-item" rel="tag">configuration</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-05-05T00:00:00+02:00">May 5, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=CONFIGURE+YOUR+ENVIRONMENT+VARIABLES%20http%3A%2F%2Flocalhost%3A4000%2Fconfiguration%2Fconfig-envfile%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fconfiguration%2Fconfig-envfile%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fconfiguration%2Fconfig-envfile%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/configuration/config-configs/" class="pagination--pager" title="CONFIGURE YOUR ODAMAP INSTANCE
+">Previous</a>
+    
+    
+      <a href="/configuration/config-locales/" class="pagination--pager" title="CONFIGURE YOUR LOCALES
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/general/changelog/" rel="permalink">CHANGE LOG
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/dev/roadmaps/" rel="permalink">ROADMAPS
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+Developers / roadmap
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/meta/license/" rel="permalink">LICENSE
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/meta/credits/" rel="permalink">CREDITS
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/Etalab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/etalab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 ODAMAP docs. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

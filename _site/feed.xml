@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-18T20:09:19+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ODAMAP docs</title><subtitle>&quot;official documentation for ODAMAP&quot;</subtitle><author><name>Julien Paris</name></author><entry><title type="html">CHANGE LOG</title><link href="http://localhost:4000/general/changelog/" rel="alternate" type="text/html" title="CHANGE LOG" /><published>2020-05-18T00:00:00+02:00</published><updated>2020-05-18T00:00:00+02:00</updated><id>http://localhost:4000/general/changelog</id><content type="html" xml:base="http://localhost:4000/general/changelog/">&lt;hr /&gt;
+
+&lt;h3 id=&quot;version-2&quot;&gt;Version 2&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;v.2.1.0 : adding docs&lt;/li&gt;
+  &lt;li&gt;v.2.0.8 : no map scroll parameter in .env and/or url&lt;/li&gt;
+  &lt;li&gt;v.2.0.7 : fix bug of color and zoom when switching datasets with url params&lt;/li&gt;
+  &lt;li&gt;v.2.0.6 : store setup + zoom from url params&lt;/li&gt;
+  &lt;li&gt;v.2.0.5 : url parameters for store preload&lt;/li&gt;
+  &lt;li&gt;v.2.0.4 : custom color and behaviour for nuxt loading bar&lt;/li&gt;
+  &lt;li&gt;v.2.0.3 : fix max-height main window&lt;/li&gt;
+  &lt;li&gt;v.2.0.2 : no tabs override from url param or env var&lt;/li&gt;
+  &lt;li&gt;v.2.0.1 : pie chart &amp;amp; multiple charts&lt;/li&gt;
+  &lt;li&gt;v.2.0.0 : routes/tabs for several datasets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;version-1&quot;&gt;Version 1&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;v.1.14.1 : optimizing build =&amp;gt;
+    &lt;ul&gt;
+      &lt;li&gt;geojson 1000m instead of 100m&lt;/li&gt;
+      &lt;li&gt;fonts from CDN instead of build&lt;/li&gt;
+      &lt;li&gt;analyzer in nuxt script : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuxt run analyze&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;big linting with standardJS&lt;/li&gt;
+      &lt;li&gt;fetch minified data instead of pretty jsons&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;v.1.13.1 : fix bug coherent colors when rebuilding apexChart&lt;/li&gt;
+  &lt;li&gt;v.1.13 : iframing override from from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; file&lt;/li&gt;
+  &lt;li&gt;v.1.12 : iframing parameter in url to hide navbar&lt;/li&gt;
+  &lt;li&gt;v.1.11 : Matomo parameters injection from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; file&lt;/li&gt;
+  &lt;li&gt;v.1.10 :
+    &lt;ul&gt;
+      &lt;li&gt;ability to load config files from distant files&lt;/li&gt;
+      &lt;li&gt;can write config js files to json files in statics&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;v.1 : first version (almost stable)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="log" /><category term="versions" /><summary type="html"></summary></entry><entry><title type="html">ROADMAPS</title><link href="http://localhost:4000/dev/roadmaps/" rel="alternate" type="text/html" title="ROADMAPS" /><published>2020-05-17T00:00:00+02:00</published><updated>2020-05-17T00:00:00+02:00</updated><id>http://localhost:4000/dev/roadmaps</id><content type="html" xml:base="http://localhost:4000/dev/roadmaps/">&lt;hr /&gt;
+&lt;h2 id=&quot;developers--roadmap&quot;&gt;Developers / roadmap&lt;/h2&gt;
+
+&lt;p&gt;Check our &lt;a href=&quot;https://github.com/etalab/dashboard-aides-entreprises/projects/2&quot;&gt;project page on Github&lt;/a&gt; to have a glimpse of our roadmap.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/static/screenshots/repo-project-01.png&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;synthesis-document&quot;&gt;Synthesis document&lt;/h2&gt;
+
+&lt;p&gt;You can also check the &lt;a href=&quot;https://docs.google.com/presentation/d/1j_0xaJzPIjmuDSQG-nNYzADad4pFaf8E3VBkggFu1FY/edit?usp=sharing&quot;&gt;wireframe document online&lt;/a&gt; or the &lt;a href=&quot;/static/schema/DASHBOARD_WIREFRAME_v.1.0-2.0.pdf&quot;&gt;wireframe document as pdf&lt;/a&gt; we are working on to have a more graphical approach on our roadmap.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/static/schemas/DASHBOARD_WIREFRAME-architecture-V2-view-03.png&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="tech" /><category term="roadmap" /><category term="stack" /><summary type="html">Developers / roadmap</summary></entry><entry><title type="html">LICENSE</title><link href="http://localhost:4000/meta/license/" rel="alternate" type="text/html" title="LICENSE" /><published>2020-05-16T00:00:00+02:00</published><updated>2020-05-16T00:00:00+02:00</updated><id>http://localhost:4000/meta/license</id><content type="html" xml:base="http://localhost:4000/meta/license/">&lt;hr /&gt;
+
+&lt;p&gt;MIT License&lt;/p&gt;
+
+&lt;p&gt;Copyright (c) 2020 Etalab&lt;/p&gt;
+
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:&lt;/p&gt;
+
+&lt;p&gt;The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.&lt;/p&gt;
+
+&lt;p&gt;THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="license" /><summary type="html"></summary></entry><entry><title type="html">CREDITS</title><link href="http://localhost:4000/meta/credits/" rel="alternate" type="text/html" title="CREDITS" /><published>2020-05-14T00:00:00+02:00</published><updated>2020-05-14T00:00:00+02:00</updated><id>http://localhost:4000/meta/credits</id><content type="html" xml:base="http://localhost:4000/meta/credits/">&lt;hr /&gt;
+
+&lt;h3 id=&quot;services&quot;&gt;Services&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Direction interministérielle du numérique or &lt;a href=&quot;https://www.numerique.gouv.fr/dinum/&quot;&gt;DINUM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.etalab.gouv.fr/&quot;&gt;Mission Etalab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ministère de l’&lt;a href=&quot;https://www.economie.gouv.fr/covid19-soutien-entreprises/tableau-de-bord-aides&quot;&gt;Economie, des Finances, de l’Action et des Comptes publics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Portail du &lt;a href=&quot;https://www.gouvernement.fr/info-coronavirus/carte-et-donnees&quot;&gt;Gouvernement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;odamaps-team-&quot;&gt;ODAMAP’s team :&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/abulte&quot;&gt;Geoffrey Aldebert&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/geoffreyaldebert&quot;&gt;Alexandre Bulté&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mathilde Hoang&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JulienParis&quot;&gt;Julien Paris&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/romtal&quot;&gt;Romain Tales&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="credits" /><summary type="html"></summary></entry><entry><title type="html">MAINTAINCE</title><link href="http://localhost:4000/dev/maintain/" rel="alternate" type="text/html" title="MAINTAINCE" /><published>2020-05-13T00:00:00+02:00</published><updated>2020-05-13T00:00:00+02:00</updated><id>http://localhost:4000/dev/maintain</id><content type="html" xml:base="http://localhost:4000/dev/maintain/">&lt;hr /&gt;
+
+&lt;h3 id=&quot;maintainers-&quot;&gt;Maintainers :&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:julien.paris@data.gouv.fr&quot;&gt;Julien Paris&lt;/a&gt; (aka &lt;a href=&quot;https://github.com/JulienParis&quot;&gt;JulienParis&lt;/a&gt; on Github)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:geoffrey.aldebert@data.gouv.fr&quot;&gt;Geoffrey Aldebert&lt;/a&gt; (aka &lt;a href=&quot;https://github.com/geoffreyaldebert&quot;&gt;geoffreyaldebert&lt;/a&gt; on Github)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;project-contacts-&quot;&gt;Project contacts :&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:julien.paris@data.gouv.fr&quot;&gt;Julien Paris&lt;/a&gt; (aka &lt;a href=&quot;https://github.com/JulienParis&quot;&gt;JulienParis&lt;/a&gt; on Github)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:alexandre.bulte@data.gouv.fr&quot;&gt;Alexandre Bulte&lt;/a&gt; (aka &lt;a href=&quot;https://github.com/abulte&quot;&gt;abulte&lt;/a&gt; on Github)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:geoffrey.aldebert@data.gouv.fr&quot;&gt;Geoffrey Aldebert&lt;/a&gt; (aka &lt;a href=&quot;https://github.com/geoffreyaldebert&quot;&gt;geoffreyaldebert&lt;/a&gt; on Github)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:romain.tales@data.gouv.fr&quot;&gt;Romain Tales&lt;/a&gt; (aka &lt;a href=&quot;https://github.com/romtal&quot;&gt;romtal&lt;/a&gt; on Github)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="credits" /><category term="maintainance" /><summary type="html"></summary></entry><entry><title type="html">GUIDELINES FOR DEVELOPMENT</title><link href="http://localhost:4000/dev/guidelines/" rel="alternate" type="text/html" title="GUIDELINES FOR DEVELOPMENT" /><published>2020-05-12T00:00:00+02:00</published><updated>2020-05-12T00:00:00+02:00</updated><id>http://localhost:4000/dev/guidelines</id><content type="html" xml:base="http://localhost:4000/dev/guidelines/">&lt;hr /&gt;
+&lt;p&gt;This project is prone to be developped by several developpers, so we agreed on some basic rules…&lt;/p&gt;
+
+&lt;h2 id=&quot;general&quot;&gt;GENERAL&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;we try to comment and document in english&lt;/li&gt;
+  &lt;li&gt;check out our &lt;a href=&quot;https://github.com/co-demos/apiviz/projects&quot;&gt;“project” boards&lt;/a&gt; board to have an idea about the priorities we collectively decided to work on&lt;/li&gt;
+  &lt;li&gt;“see something, say something” : open new issues when you see problems to solve&lt;/li&gt;
+  &lt;li&gt;document your own issues with everything you have : images, references, snippets, etc…&lt;/li&gt;
+  &lt;li&gt;we update the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.md&lt;/code&gt; and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GUIDELINES_DEV.md&lt;/code&gt; directly on github&lt;/li&gt;
+  &lt;li&gt;for the markdown files try to &lt;a href=&quot;http://www.cirosantilli.com/markdown-style-guide/#dollar-signs-in-shell-code&quot;&gt;follow those advices&lt;/a&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;javascript&quot;&gt;JAVASCRIPT&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;camelcase your functions’ and variables’ names&lt;/li&gt;
+  &lt;li&gt;lint off your code as mush as possible&lt;/li&gt;
+  &lt;li&gt;comment your code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;python&quot;&gt;PYTHON&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;comment your code&lt;/li&gt;
+  &lt;li&gt;factorize what you can&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;git-management&quot;&gt;GIT MANAGEMENT&lt;/h2&gt;
+
+&lt;p&gt;We are following this git principles : &lt;a href=&quot;https://guillim.github.io/git/2018/04/24/Git-workflow.html&quot;&gt;link to blog&lt;/a&gt;. In brief :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;there are 2 main branches : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;develop&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;new features must be code reviewed and then (if accepted) pulled into the branch &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;develop&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;once every new feature is accepted and merged into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;develop&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;develop&lt;/code&gt; must be merged into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; to constitute a new release&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please follow those rules when developping new features :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;locally : create a new branch to work on your own feature(s) named like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mypseudo_mynewfeature&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;before pushing your changes pull the remote &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;develop&lt;/code&gt; branch to be merged with your changes in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mypseudo_mynewfeature&lt;/code&gt; branch (so to be sure the features you just developped are compatible with the checked/reviewed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;develop&lt;/code&gt; branch):
+    &lt;blockquote&gt;
+
+      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin develop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;then push your branch to the remote repo (github repo) :
+    &lt;blockquote&gt;
+
+      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;mypseudo_mynewfeature&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ask for a pull request on Github from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mypseudo_mynewfeature&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;develop&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;someone else must be assigned as a code reviewer, whose in charge to accept your code changes and merge&lt;/li&gt;
+  &lt;li&gt;once accepted / reviewed delete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mypseudo_mynewfeature&lt;/code&gt; from repo to keep the branches clean&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Julien Paris</name></author><category term="tech" /><category term="roadmap" /><category term="guidelines" /><category term="stack" /><summary type="html">This project is prone to be developped by several developpers, so we agreed on some basic rules…</summary></entry><entry><title type="html">CONTRIBUTING GUIDE</title><link href="http://localhost:4000/dev/contributing/" rel="alternate" type="text/html" title="CONTRIBUTING GUIDE" /><published>2020-05-10T00:00:00+02:00</published><updated>2020-05-10T00:00:00+02:00</updated><id>http://localhost:4000/dev/contributing</id><content type="html" xml:base="http://localhost:4000/dev/contributing/">&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello fellow developer/hacker/citizen/peer!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;inspired by : &lt;a href=&quot;https://github.com/opendatateam/udata/blob/master/CONTRIBUTING.md&quot;&gt;contributing guide of udata project&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;language&quot;&gt;Language&lt;/h2&gt;
+
+&lt;p&gt;The development language is English.&lt;/p&gt;
+
+&lt;p&gt;All comments and documentation should be written in English, so that we don’t end up with “frenghish” methods, and so we can share our learnings with developers around the world.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;code-guides&quot;&gt;Code guides&lt;/h2&gt;
+
+&lt;h3 id=&quot;javascript-style-guide&quot;&gt;JavaScript style guide&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/standard/standard&quot;&gt;&lt;img src=&quot;https://cdn.rawgit.com/standard/standard/master/badge.svg&quot; alt=&quot;JavaScript Style Guide&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We follow the &lt;a href=&quot;https://standardjs.com/#install&quot;&gt;Standard JavaScript styleguide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;html-and-css-code-guide&quot;&gt;HTML and CSS code guide&lt;/h3&gt;
+
+&lt;p&gt;We follow @mdo’s &lt;a href=&quot;http://codeguide.co/&quot;&gt;code guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;documentation-syntax&quot;&gt;Documentation syntax&lt;/h3&gt;
+
+&lt;p&gt;We try to stay as close as possible to &lt;a href=&quot;http://commonmark.org/&quot;&gt;CommonMark&lt;/a&gt; but use default &lt;a href=&quot;http://www.mkdocs.org/user-guide/writing-your-docs/&quot;&gt;extensions proposed by MkDocs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="tech" /><category term="stack" /><category term="credits" /><summary type="html"></summary></entry><entry><title type="html">STACK</title><link href="http://localhost:4000/dev/stack/" rel="alternate" type="text/html" title="STACK" /><published>2020-05-09T00:00:00+02:00</published><updated>2020-05-09T00:00:00+02:00</updated><id>http://localhost:4000/dev/stack</id><content type="html" xml:base="http://localhost:4000/dev/stack/">&lt;hr /&gt;
+
+&lt;p&gt;All libraries, packages and tools listed below are under open licence.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;frontend&quot;&gt;Frontend&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://nuxtjs.org/&quot;&gt;Nuxt.js&lt;/a&gt;&lt;/strong&gt; as JS framework upon Vue.js,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue.js&lt;/a&gt;&lt;/strong&gt; as JS framework,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/axios/axios&quot;&gt;Axios&lt;/a&gt;&lt;/strong&gt; for API queries (to make queries to &lt;a href=&quot;https://github.com/entrepreneur-interet-general/solidata_backend&quot;&gt;Solidata&lt;/a&gt; or else),&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://vuetifyjs.com&quot;&gt;Vuetify&lt;/a&gt;&lt;/strong&gt; as VUE-CSS framework,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://docs.mapbox.com/mapbox-gl-js/api/&quot;&gt;Mapbox-GL&lt;/a&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;a href=&quot;https://soal.github.io/vue-mapbox/&quot;&gt;vue-mapbox&lt;/a&gt;&lt;/strong&gt; as a mapbox-gl wrapper for vue.js&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://apexcharts.com/&quot;&gt;Apex charts&lt;/a&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;a href=&quot;https://apexcharts.com/docs/vue-charts/&quot;&gt;vue-apexcharts&lt;/a&gt;&lt;/strong&gt; as a mapbox-gl wrapper for vue.js&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://matomo.org/&quot;&gt;Matomo&lt;/a&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;a href=&quot;https://www.npmjs.com/package/vue-matomo&quot;&gt;vue-matomo&lt;/a&gt;&lt;/strong&gt; as a mapbox-gl wrapper for vue.js&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/nuxt-community/nuxt-i18n&quot;&gt;nuxt-i18n&lt;/a&gt;&lt;/strong&gt; for internationalization&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.npmjs.com/package/dotenv&quot;&gt;dotenv&lt;/a&gt;&lt;/strong&gt; to load env variables
+  &lt;!-- - **[Vue-json-editor](https://github.com/dirkliu/vue-json-editor)** for configuration edition in the back-office --&gt;
+  &lt;!-- - **[cookie-parser](https://github.com/expressjs/cookie-parser)** and **[js-cookie](https://github.com/js-cookie/js-cookie)** for cookies management --&gt;
+  &lt;!-- - **[Leaflet](https://leafletjs.com)**, **[Vue2Leaflet](https://github.com/KoRiGaN/Vue2Leaflet)**, and **[PruneCluster](https://github.com/SINTEF-9012/PruneCluster)** for map layout --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- -------
+
+## Server
+  - **[Ubuntu 18.04]()**, 
+  - **[NGINX](https://www.nginx.com/)**, 
+  - hosted in **[Digital Ocean](http://digitalocean.com/)**, 
+  - domain name from **[NameCheap](http://namecheap.com/)** --&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;dev-tools&quot;&gt;Dev tools&lt;/h2&gt;
+&lt;p&gt;&lt;!-- - **[Docker](https://www.docker.com/)**... also check this [introduction to Docker](https://guillim.github.io/docker/2018/11/18/docker-hands-on-intro.html) --&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.iterm2.com/&quot;&gt;iTerm2&lt;/a&gt;&lt;/strong&gt; instead of Terminal&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;&lt;/strong&gt; as code editor&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://standardjs.com/#install&quot;&gt;StandardJS&lt;/a&gt;&lt;/strong&gt; as code linter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github pages&lt;/a&gt;&lt;/strong&gt; for hosting&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/strong&gt; as static website framework&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&quot;&gt;Minimal Mistakes template&lt;/a&gt;&lt;/strong&gt; as Jekyll template&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ---------
+
+## Others
+  - **[Visual Understanding Environment](https://vue.tufts.edu/index.cfm)** to draw clean blueprints and mindmaps --&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;deployment&quot;&gt;Deployment&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://netlify.com&quot;&gt;Netlify&lt;/a&gt;&lt;/strong&gt; for hosting&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="tech" /><category term="stack" /><category term="credits" /><summary type="html"></summary></entry><entry><title type="html">INSTALL THE DOCS WITH JEKYLL</title><link href="http://localhost:4000/guide/install-docs/" rel="alternate" type="text/html" title="INSTALL THE DOCS WITH JEKYLL" /><published>2020-05-08T00:00:00+02:00</published><updated>2020-05-08T00:00:00+02:00</updated><id>http://localhost:4000/guide/install-docs</id><content type="html" xml:base="http://localhost:4000/guide/install-docs/">&lt;hr /&gt;
+
+&lt;p&gt;The documentation is produced with :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github pages&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&quot;&gt;Minimal Mistakes template&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;for-a-local-deployment-of-the-documentation-project-jekyll--mmistakes-template&quot;&gt;For a local deployment of the documentation project (Jekyll + MMistakes template)&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install ruby, Jekyll
+&lt;br /&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ruby
+gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install setup (given the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; files)
+&lt;br /&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bundler
+bundle
+bundle &lt;span class=&quot;nb&quot;&gt;install
+&lt;/span&gt;bundle update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Launch Jekyll server 
+&lt;br /&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;span class=&quot;c&quot;&gt;# or if you want to run the docs server on another port&lt;/span&gt;
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve &lt;span class=&quot;nt&quot;&gt;--port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4001
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;then check in your browser : &lt;a href=&quot;127.0.0.1:4000&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;127.0.0.1:4000&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="documentation" /><category term="configuration" /><category term="installation" /><category term="Jekyll" /><summary type="html"></summary></entry><entry><title type="html">DEPLOYMENT CONFIGURATIONS</title><link href="http://localhost:4000/guide/deployment-configs/" rel="alternate" type="text/html" title="DEPLOYMENT CONFIGURATIONS" /><published>2020-05-07T00:00:00+02:00</published><updated>2020-05-07T00:00:00+02:00</updated><id>http://localhost:4000/guide/deployment-configs</id><content type="html" xml:base="http://localhost:4000/guide/deployment-configs/">&lt;hr /&gt;
+&lt;h2 id=&quot;deployment-on-netlify&quot;&gt;Deployment on Netlify&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-build--deploy--&quot;&gt;section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Build &amp;amp; deploy &lt;/code&gt; :&lt;/h3&gt;
+
+&lt;h4 id=&quot;continuous-deployment--build-settings&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Continuous Deployment / Build settings&lt;/code&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Repository : github.com/etalab/dashboard-aides-entreprises
+  Build &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; : npm run build
+  Publish directory : dist
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;continuous-deployment--deply-contexts&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Continuous Deployment / Deply contexts&lt;/code&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Production branch : master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;environment--environment-variables-&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Environment / Environment variables &lt;/code&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c&quot;&gt;### copy your variables from your .env file&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Julien Paris</name></author><category term="documentation" /><category term="configuration" /><category term="schema" /><category term="principles" /><category term="installation" /><category term="deployment" /><summary type="html">Deployment on Netlify</summary></entry></feed>

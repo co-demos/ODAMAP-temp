@@ -38,7 +38,7 @@ frontend/.vscode
 */dist
 
 # Jekyll
-docs/_site
-docs/.sass-cache
-docs/.jekyll-metadata
-docs/Gemfile.lock
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
